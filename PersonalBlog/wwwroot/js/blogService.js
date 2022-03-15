@@ -2,7 +2,7 @@
 
     const blogPostsUrl = '/Home/LatestBlogPost/';
     const blogPostUrl = '/Home/Post/?link=';
-    const loadMorePostsUrl = '/Home/MoreBlogPosts/?oldestBlogPostId=';
+    const loadMorePostsUrl = '/Home/MoreBlogPost/?oldestBlogPostId=';
 
     async function loadData(url) {
         let connectionStatus = '';
