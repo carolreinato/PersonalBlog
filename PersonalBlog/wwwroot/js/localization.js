@@ -1,6 +1,6 @@
 ﻿define([], function () {
 
-    const GOOGLE_MAP_KEY = 'AIzaSyColXfGj9modH5U9dVXNBJ2YoFKjoLsGt0';
+    const GOOGLE_MAP_KEY = '<API KEY>';
 
     async function ipLookUp() {
         try {
