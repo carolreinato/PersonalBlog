@@ -33,7 +33,7 @@
             const oldestBlogPostId = clientStorage.getOldestBlogPostId();
             template.appendBlogList(posts, oldestBlogPostId);
         } else {
-            $('#connection-status').html('Nao ha mais posts em cache para exibir');
+            $('#connection-status').html('Nao há mais posts em cache para exibir');
             window.location = '#connection-status';
         }
     }
