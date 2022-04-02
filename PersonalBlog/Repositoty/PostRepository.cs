@@ -24,5 +24,23 @@ namespace PersonalBlog.Repositoty
             var collection = _postCollection.Find(new BsonDocument()).ToList();
             return collection;
         }
+
+        public Post Create(Post post)
+        {
+            _postCollection.InsertOne(post);
+            return post;
+        }
+
+        public bool Update(Post post)
+        {
+            var result = _postCollection.ReplaceOne(x => x._id == post._id, post);
+            return result.IsAcknowledged;
+        }
+
+        public bool Delete(Post post)
+        {
+            var result = _postCollection.DeleteOne(x => x._id == post._id);
+            return result.IsAcknowledged;
+        }
     }
 }
