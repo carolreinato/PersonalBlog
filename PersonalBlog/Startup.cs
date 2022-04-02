@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using PersonalBlog.Repositoty;
 using PersonalBlog.Services;
 using PersonalBlog.Services.Impl;
 using System;
@@ -27,6 +28,7 @@ namespace PersonalBlog
         {
             services.AddControllersWithViews();
             services.AddSingleton<IBlogService, BlogServiceImpl>();
+            services.AddSingleton<IPostRepository, PostRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
