@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Hosting;
 using PersonalBlog.Models;
-using PersonalBlog.Repositoty;
+using PersonalBlog.Repository;
 using System;
 using System.Collections.Generic;
 using System.IO;

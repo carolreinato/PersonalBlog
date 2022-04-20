@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using PersonalBlog.Repositoty;
+using PersonalBlog.Repository;
 using PersonalBlog.Services;
 using PersonalBlog.Services.Impl;
 using System;

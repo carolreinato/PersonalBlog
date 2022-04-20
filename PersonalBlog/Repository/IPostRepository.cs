@@ -1,7 +1,7 @@
 ﻿using PersonalBlog.Models;
 using System.Collections.Generic;
 
-namespace PersonalBlog.Repositoty
+namespace PersonalBlog.Repository
 {
     public interface IPostRepository
     {
